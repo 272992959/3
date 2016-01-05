@@ -3706,9 +3706,8 @@ window.Zepto = Zepto,
                     xy: today.xy(dataid, idx)
                 }).done(function(e) {
                     if (!e.errorCode) {
-                        var tip;
-                        (Math.random() < 0.1) ? tip ="%c" + h + ":" + m + ",成功用了这么久，该打赏一个啦~~" : tip ="%c" + h + ":" + m + ",成功";
-                        console.info(tip,"color:#f00;");
+                        console.info("%c" + h + ":" + m + ",成功","color:#3385FF;font-size:20px;");
+                        Math.random() < 0.1 ? console.log("%c(~~耍了这么久，拜托打赏一个啦~~)","color:#f00;font-size:16px;") : console.log("👌👌👌😄👌👌👌");
                     } else {
                         console.warn(h + ":" + m + ",(这个已领取，领取下一个中。。。)");
                     }
